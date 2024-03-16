@@ -1,11 +1,9 @@
 html {
+  background-origin: padding-box;
+  background-image:linear-gradient(135deg, pink 20%, navy 10% 30%, white 30% 30.5%, navy 30.5% 41%, black 41%, maroon 70% );
     height: 100%;
     width: 100%;
-    background-color: rgb(172, 194, 212);
-  }
-  body {
-    background-origin: padding-box;
-    background-image:linear-gradient(135deg, pink 20%, navy 10% 30%, white 30% 30.5%, navy 30.5% 41%, black 41%, maroon 70% );
+    /* background-color: rgb(172, 194, 212); */
   }
   input {
     font-size:30px;
