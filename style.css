@@ -1,23 +1,51 @@
 html {
   background-origin: padding-box;
-  background-image:linear-gradient(135deg, pink 20%, navy 10% 30%, white 30% 30.5%, navy 30.5% 41%, black 41%, maroon 70% );
     height: 100%;
     width: 100%;
+    background-image:url("./background.jpg");
+    background-size:auto;
     /* background-color: rgb(172, 194, 212); */
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
-  input {
+  body {
     font-size:30px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
   }
   h1 { 
     text-align: center;
+    font-size:60px;
+  }
+
+  button {
+    background-color:#fffdd0;
+    padding: 15px;
+    text-align:center;
+    display: inline-block;
+    font-family:monospace;
+    border-style:inset;
+    border-radius: 3px;
+  }
+  button:active {
+    border-style:outset;
+  }
+  button:hover {
+    text-decoration: underline;
+  }
+
+  #cat {
+    width:30%;
+    height:100px;
+    font-size: 20px;
   }
   
   .navBar {
       color:black;
-      float: left;
-      font-size:20px;
-      width:auto;
-      height:60px;
+      /* float: left; */
+      /* font-size:20px; */
+      /* width:auto;
+      height:60px; */
       text-align: center;
       text-decoration: none;
       padding-left:20px;

@@ -3,36 +3,50 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, noindex, nofollow">
   <title>Book Buddies</title>
  
   
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    #logo {
+      width: 10%;
+    }
+    #header {
+      float:middle;
+    }
+    #ai {
+      position:fixed;
+      float:right;
+      top:90%;
+
+    }
+    #peanutbutterjellytime {
+      font-family:monospace;
+    }
+  </style>
 </head>
 
 <body>
-  <nav>
+  <nav id="header">
       <a class="navBar" href="./index.html">
-        <img src="logo.svg" alt="Icon" width=80></img>
+        <img src="logo.svg" alt="Icon" id="logo"></img>
       </a>
       <a class="navBar" href="./index.html"><h1>Book Buddies</h1></a>
   </nav>
   <div>
   <form>
-    <label>Type a word or phrase and learn how to say it!<br><br></label>
+    <labe id="peanutbutterjellytime">Type a word or phrase and learn how to say it!<br></label>
     
-    <br>
-    <br>
-    <input type="text" placeholder="Please Type Here"></input>
+    <input id="cat" type="text" placeholder="Please Type Here"></input>
     <br>
     <br>
     <button type="button">Submit</button>
-    <br>
-    <br>
     <button type="button">Practice conversational skills</button>
   </form>
   <script src="script.js"></script>
   </div>
+  <!-- <a id="ai" href="https://poe.com/BookBuddy1.0">help me</a> -->
 </body>
 
 </html>
