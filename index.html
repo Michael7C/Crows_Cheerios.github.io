@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, noindex, nofollow">
     <title>Book Buddies</title> 
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
     <style>
       #logo {
         width: 10%;
@@ -16,6 +16,7 @@
         font-family:monospace;
       }
     </style>
+    <script src="./script.js"></script>
   </head>
   <body>
     <nav id="header">
@@ -30,9 +31,9 @@
       <input id="cat" type="text" placeholder="Please Type Here"></input>
       <br>
       <br>
-      <button type="button">Submit</button>
-      <a href="https://poe.com/BookBuddy1.0"><button type="button">Practice conversational skills</button></a>
+      <button type="button" onClick = "playSounds()">Submit</button>
     </form>
+    <a href="https://poe.com/BookBuddy1.0"><button type="button">Practice conversational skills</button></a>
     <p id = "answer" hidden></p>
     </div>
   </body>

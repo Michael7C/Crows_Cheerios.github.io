@@ -1,8 +1,22 @@
 var dictionary = fetch("./dictionary.txt");
 var wordsAndPhonetics = dictionary.split("\n");
 
+function playSounds() {
+    var text = document.getElementById("cat").value;
+    var words = findPhonetics(text);
+    for (var outer = 0; outer < words.length; outer++) {
+        for (var inner = 0; inner < words[outer].length; inner++) {
+            try {
+                var audio = new Audio("./phonetics/" + words[outer][inner] + ".mp3");
+                audio.play();
+            } catch (error) {
+               continue; 
+            }
+        }
+    }
+}
+
 function findPhonetics(text) {
-    // var output = "";
     var output = [];
     var words = [];
     text = text.toLowerCase();
@@ -24,7 +38,7 @@ function findPhonetics(text) {
             var phrase = wordsAndPhonetics[phraseLoc].substring(wordsAndPhonetics[phraseLoc].length - wordsAndPhonetics[phraseLoc].lastIndexOf(" "));
             appendItem(output, phrase);
         } else {
-            return 
+            return NaN
         }
     }
     return output;
